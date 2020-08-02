@@ -1,0 +1,15 @@
+lyrics-data-complete.csv
+.DS_Store
+*.pyc
+__pycache__
+lyrics_bert_vectors_total.pkl.gz
+df_total_cleaned.pkl.gz
+.Rhistory
+.ipynb_checkpoints/
+archive/
+user_lyrics_data_tmp.csv
+notebooks/data/lyrics-data.csv
+notebooks/data/lyrics-data_small.csv
+notebooks/data/df_total_cleaned.csv
+notebooks/data/df_total_cleaned.pkl
+notebooks/data/metal_lyrics/

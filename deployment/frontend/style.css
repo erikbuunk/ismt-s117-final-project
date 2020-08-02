@@ -1,0 +1,31 @@
+.inverse {
+  background-color: white !important;
+  color: black !important;
+  padding: 5px;
+}
+
+.inverse_inverse {
+  background-color: black !important;
+  color: white !important;
+  padding: 5px;
+}
+
+.jumbotron {
+  /* background-image: url("jimi.jpeg"); */
+  /* background-image: url("taylor_swift.jpeg"); */
+  /* background-image: url("snoop_dog.jpg"); */
+  object-fit: cover;
+  -o-object-fit: cover;
+  /* background: url(mountain.jpg); */
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  /* position: absolute; */
+}
+
+.form-control {
+  white-space: pre-wrap;
+}
+
+#lyrics {
+  white-space: pre-wrap;
+}
