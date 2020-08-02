@@ -15,7 +15,8 @@ https://www.kaggle.com/markkorvin/large-metal-lyrics-archive-228k-songs
 In this repository small subset of the data have been upload, because of contraints of GitHub. To run the complete project the complete sources can be downloaded from the locations above.
 
 ## Complete Documentation:
-You can find the  complete [documentation](documentation/ISMT S117 Final Write up Erik Buunk.pdf) in the direcotory /documentation.
+You can find the  complete documentation in the file: `ISMT-S117-Final-Write-up-Erik-Buunk.pdf`
+
 
 
 
