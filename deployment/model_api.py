@@ -34,7 +34,6 @@ prediction_model = pd.read_pickle(path + 'final_lyrics_model.pkl.gz')
 
 
 def clean_single_lyric(text):
-    #   print("cleaning text")
     x = text.strip()
     y = re.sub('\[.*?\]', '', x)
     z = re.sub('\(.*?\)', '', y)
@@ -43,7 +42,6 @@ def clean_single_lyric(text):
 
 
 def generate_single_BERT_token(text):
-    #   print("generate token")
     tokens = tokenizer.batch_encode_plus(
         text["Lyric"],
         pad_to_max_length=True,
@@ -57,20 +55,17 @@ def generate_single_BERT_token(text):
 
 
 def get_prediction(token):
-    # print("get prediction")
     p = prediction_model.predict(token)
     print("Prediction: " + p)
     return p
 
 
 def generate_id():
-    # print('generate id')
     uuidOne = uuid.uuid1()
     return uuidOne.hex
 
 
 def write_prediction(cleaned_lyrics, token, prediction, id):
-    # print('write prediction')
     df = pd.DataFrame.from_dict(
         {"id": [id], "Prediction": prediction, "Truth": '', "Lyric": cleaned_lyrics})
     df_token = pd.DataFrame(token)
@@ -89,7 +84,6 @@ def write_prediction(cleaned_lyrics, token, prediction, id):
 
 
 def update_prediction(id, new_value):
-    # print('update prediction')
     df_in = pd.read_csv(filename)
     if len(df_in[df_in["id"] == id]) == 1:
         df_in.loc[df_in["id"] == id, ["Truth"]] = new_value
@@ -97,7 +91,6 @@ def update_prediction(id, new_value):
 
 
 def predict(lyric):
-    # print("predict all")
     text = clean_single_lyric(lyric)
     token = generate_single_BERT_token(text)
     predicted_genre = get_prediction(token)
