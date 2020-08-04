@@ -1,17 +1,11 @@
-# /docs for endpoints: http://127.0.0.1:8000/docs
-
-# pip install fastapi
-# pip install uvicorn
-# pip install aiofiles
-# pip install transformers
-# pip install torch
-
 # run:  uvicorn model_api:app
+# /docs for endpoints: http://127.0.0.1:8000/docs
+# /frontend/index.html for the website
+
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-#from fastapi.encoders import jsonable_encoder
-#from fastapi.responses import JSONResponse
+from sklearn.svm import SVC
 
 import pandas as pd
 import pickle
@@ -20,11 +14,12 @@ import torch
 import re
 
 import transformers
-# what we're used to: BERT
+
 from transformers import BertTokenizer, BertModel
 
 print("loading pretrained BERT feature model")
 MODEL_NAME = 'bert-base-uncased'
+
 # Load pre-trained model
 model = BertModel.from_pretrained(MODEL_NAME)
 # Load pre-trained model tokenizer (vocabulary)
@@ -34,7 +29,7 @@ path = "./data/"
 device = torch.device("cpu")
 filename = path + "user_lyrics_data.csv"
 
-print("Loading Trained Model")
+print("Loading Trained Prediction Model")
 prediction_model = pd.read_pickle(path + 'final_lyrics_model.pkl.gz')
 
 
