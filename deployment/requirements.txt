@@ -3,3 +3,4 @@ uvicorn
 aiofiles
 transformers
 torch
+scikit-learn
