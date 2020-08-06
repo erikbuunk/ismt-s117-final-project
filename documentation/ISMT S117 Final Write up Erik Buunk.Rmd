@@ -44,7 +44,7 @@ Code can be found in this repository:
 If you want to run parts of the code:
 
 - Use the `\notebooks_small` notebooks, you can use this on COLAB and place the data files in the root of the project. (Notebook 2 for Data Exploration and Notebook 5 for Prediction Modeling)
-- And please run the deployment in the `/deployment` directory. Instructions are in the Deployment section of this document.
+- And please run the deployment in the `/deployment` directory. Instructions are in the Deployment section of this document. If you don't have the time you can take look at the installation en demo of the app: [https://youtu.be/hlz_RryCHV4](https://youtu.be/hlz_RryCHV4)
 
 This write up follows the notebooks of `\notebooks`
 

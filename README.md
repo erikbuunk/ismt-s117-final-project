@@ -2,6 +2,8 @@
 
 Source: https://github.com/erikbuunk/ismt-s117-final-project.git
 
+
+
 ## Project
 This project is the final for the [Harvard Extension School](https://www.extension.harvard.edu/) course Text Analytics and Natural Language Processing. 
 
@@ -19,6 +21,8 @@ To run the the basic notebooks use `notebooks_small`
 ## Complete Write up and Documentation:
 You can find the  complete documentation in the file: `ISMT-S117-Final-Write-up-Erik-Buunk.pdf`
 
+## YouTube
 
+Installation and demo on: https://youtu.be/hlz_RryCHV4
 
 
