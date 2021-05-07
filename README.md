@@ -1,5 +1,5 @@
 # ISMT S117 Final Project: Hip Hop, Rock or Metal?
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/erikbuunk/ismt-s117-final-project/master)
 Source: https://github.com/erikbuunk/ismt-s117-final-project.git
 
 
